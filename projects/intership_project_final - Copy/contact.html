@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="script-index.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar navbar-light">
+        <a class="navbar-brand" href="#"><img class="logo_venu" src="images/logo_venugram.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav1">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="material.html">Study material</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Payment
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cbsepayment.html">CBSE exam fees</a>
+                        <a class="dropdown-item" href="olympiad-payment.html">Olympiad exam fees</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="crow1">
+            <h2>Conatact Us</h2>
+        </div>
+
+        <div class="crow2">
+            <div class="ccol1">
+                <form action="" class="message-form-container">
+                    <label for="Name">Name.</label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                    <label for="contact_no">Contact Number.</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your contact number"
+                        pattern="[0-9]{10}" required>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" name="email_id" required>
+                    <label for="message">Message</label>
+                    <textarea name="data_message" id="message" cols="10" rows="10"
+                        placeholder="include all details you can" required></textarea>
+                    <input class="submit-btn" type="submit" value="submit">
+                </form>
+            </div>
+            <div class="ccol2">
+                <div class="ccol2row1">
+                    <h3>Call Us</h3>
+                    <p>+91 9876543210 | +91 9876543210 | +91 9876543210 | +91 9876543210 </p>
+                </div>
+                <div class="ccol2row2">
+                    <h3>Email</h3>
+                    <a href="">contactvenugram@gmail.com</a>
+                </div>
+                <div class="ccol2row3">
+                    <h3>Address</h3>
+                    <p>KLE Mahadevappanna Munavalli School,3rd Main, Adi Jambav Nagar, Gokak, Karnataka 591307</p>
+                </div>
+                <div id="map" class="ccol2row4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.05382530402!2d74.8234847154078!3d16.16617438882112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0afd4a211138f%3A0x355a18bb59aca1e4!2sKLE%20Mahadevappanna%20Munavalli%20School%2C%20Gokak%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1677076528769!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row1">
+            <div class="col11">
+                <h2><a href="#"><img src="images/logo venugram.jpg" alt=""></a></h2>
+            </div>
+            <div class="col12 navf">
+                <ul>
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="material.html">Study material</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col13">
+                <h4>ADDRESS</h4>
+                <p>KLE Mahadevappanna Munavalli School,3rd Main, Adi Jambav Nagar, Gokak, Karnataka 591307</p>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="col21">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/login" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/login" class="fa fa-facebook"></a>
+                    <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                    <a href="https://www.twitter.com/login" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/login" class="fa fa-instagram"></a>
+                </div>
+                <div class="line"></div>
+                <div class="copyright">
+                    <p>Copyright ©2022 All rights reserved | This Website is owned by <a href="#">Venugram.com</a></p>
+                </div>
+            </div>
+            <div class="col22">
+                <h4>Contact details</h4>
+                <div class="mc22">
+                    <a href="" class="fa fa-envelope"></a>
+                    <a href="">venugram@gmail.com</a>
+                </div>
+                <div class="mc22">
+                    <a href="" class="fa fa-phone"></a>
+                    <a href="">9876543210</a>
+                </div>
+            </div>
+            <div class="col23">
+                <h4>Important Links</h4>
+                <div class="imp-links">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Advantage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

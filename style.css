@@ -1,0 +1,760 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: url(images/dark-logo.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 8vh;
+    background-color: transparent;
+    z-index: 1;
+}
+
+nav ul a {
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+nav ul a:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 100vh;
+    padding: 50px 200px;
+    /* margin: 100px; */
+    z-index: -1;
+}
+
+.hr-line {
+    background-image: linear-gradient(360deg, white, rgb(51, 51, 51));
+    height: 2px;
+    width: 10%;
+    margin-left: 90%;
+}
+
+.hr-line-left {
+    background-image: linear-gradient(360deg, white, rgb(51, 51, 51));
+    height: 2px;
+    width: 10%;
+    margin-right: 90%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.hcol1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#title-logo{
+    border-radius: 1px;
+}
+
+.hcol2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-details {
+    color: white;
+    display: flex;
+}
+
+.my-details h1 {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.pad-detail p {
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    background-image: linear-gradient(360deg, white, rgb(119, 0, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.sclist {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+    text-align: center;
+}
+
+.sclist h2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.sclist h2 span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+}
+
+.scramble h2 {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.scramble h2 span {
+    text-shadow: red -2px 0,
+        blue 2px 0;
+    color: rgb(165, 165, 165);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.scramble h2:hover span {
+    animation: shuffele steps(10) 1s infinite;
+}
+
+#small-page {
+    display: none;
+}
+
+#small-page span {
+    text-shadow: red -1px 0,
+        blue 1px 0;
+}
+
+@keyframes shuffele {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
+}
+
+
+/* footer */
+
+.socials {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.social {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.social a {
+    color: white;
+}
+
+.social a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.social::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.8s;
+    border: 1px solid white;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: transparent;
+
+}
+
+.social:hover::after {
+    transform: rotate(135deg);
+}
+
+
+footer>section {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur {
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px);
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.hidden1 {
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.hidden2 {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.social:nth-child(1) {
+    transition-delay: 500ms;
+}
+
+.social:nth-child(2) {
+    transition-delay: 800ms;
+}
+
+.social:nth-child(3) {
+    transition-delay: 1100ms;
+}
+
+.social:nth-child(4) {
+    transition-delay: 1400ms;
+}
+
+.social:nth-child(5) {
+    transition-delay: 1700ms;
+}
+
+.arow1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px 0;
+
+}
+
+.ar1col1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 20px;
+    transition-delay: 1s;
+}
+
+.abt-r1rows {
+    height: 30%;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+}
+
+.skill-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.abt-headings {
+    height: 10%;
+}
+
+.skill-col {
+    background-color: rgba(128, 128, 128, 0.116);
+    padding: 10px;
+    border-radius: 8px;
+    height: 100%;
+    width: fit-content;
+}
+
+.ar1col1 h2 {
+    font-size: 45px;
+}
+
+.ar1col1 p {
+    font-size: 18px;
+}
+
+
+.photo-detail>p>a {
+    color: white;
+    float: right;
+}
+
+.myselfrow11>h4>span {
+    background-image: linear-gradient(to right, green, white);
+    background-clip: text;
+    color: transparent;
+}
+
+.ar1col2 {
+    width: 30%;
+    transition-delay: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.my-image {
+    padding: 2px;
+    background-image: linear-gradient(145deg, white, black);
+}
+
+.my-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+header>.blur:nth-child(1) {
+    transition-delay: 1000ms;
+}
+
+.hrow1>.blur:nth-child(1) {
+    transition-delay: 1500ms;
+}
+
+.hrow1>.blur:nth-child(2) {
+    transition-delay: 2000ms;
+}
+
+.res-btn:hover {
+    background-image: linear-gradient(to left, rgb(25, 0, 255), rgb(0, 25, 80));
+    color: black;
+}
+
+.project-cards button:hover {
+    background-image: linear-gradient(to right, cyan, rgb(0, 26, 255));
+}
+
+.button {
+    background-color: rgba(39, 39, 39, 0.507);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.button a {
+    color: white;
+}
+
+.button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.button:hover {
+    opacity: 1;
+}
+
+.projects {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.aprow1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+
+.project-cards {
+    height: 400px;
+    width: 25%;
+    /* transition: 700ms; */
+    /* transition-delay: 0ms; */
+}
+
+.project-cards img {
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 16/9;
+}
+
+.project-cards:hover {
+    transform: scale(1.1);
+}
+
+.more-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.7;
+    background-position: right center;
+}
+
+.more-btn:hover {
+    --x: 100%;
+    transition: 2s;
+    opacity: 1;
+    color: black;
+    background-image: linear-gradient(to right, rgb(0, 255, 213)0%, rgb(119, 0, 255)100%);
+}
+
+
+.button {
+    padding: 10px;
+    width: fit-content;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.game-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 60%;
+    padding: 5px;
+    height: fit-content;
+}
+
+.gccol1,
+.gccol2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    height: 100%;
+}
+
+.gccol1 p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.gccol2 button:hover {
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 118, 118));
+    color: black;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+#game h2 {
+    display: none;
+    margin-left: 30%;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#character {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    25% {
+        top: 90px;
+    }
+
+    50% {
+        top: 90px;
+    }
+
+    75% {
+        top: 90px;
+
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#block {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    filter: invert(100%);
+    left: 460px;
+    animation-delay: 1100ms;
+}
+
+.block-run {
+    animation: block 1500ms infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 460px;
+    }
+
+    100% {
+        left: -80px;
+    }
+}
+
+/* responsive */
+@media screen and (max-width:1000px) {
+
+    nav>ul>li>a {
+        font-size: 15px;
+        opacity: 1;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .photo-detail>p>a {
+        float: left;
+    }
+
+    .foot-hidden {
+        height: fit-content;
+    }
+
+    #one,
+    #two,
+    #three,
+    .game-controls,
+    .gccol1,
+    .gccol2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px 50px;
+    }
+
+    .sclist {
+        display: none;
+    }
+
+    #small-page {
+        display: block;
+        width: 100%;
+    }
+
+    .hrow1,
+    .arow1,
+    .aprow1,
+    .apr1col1,
+    .apr1col2,
+    .apr1col3,
+    .apr1col4,
+    .ar1col1,
+    .ar1col2 {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    section {
+        padding: 20px;
+        /* margin-top: 50px; */
+        /* height: fit-content; */
+        /* width: 100%; */
+    }
+
+    .sclist h2 {
+        font-size: 55px;
+    }
+
+    .sclist {
+        display: none;
+    }
+
+    #small-page {
+        display: block;
+        width: 100%;
+    }
+
+    nav>ul>li>a {
+        font-size: 15px;
+        opacity: 1;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #game,
+    .hcol1,
+    .hcol2,
+    .pad-detail>p {
+        width: 100%;
+    }
+
+    #four {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        /* padding: auto; */
+    }
+
+    .hidden {
+        height: fit-content;
+    }
+
+    .skills,
+    .abt-r1rows,
+    .skill-cards,
+    .skill-col {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 10px 0;
+    }
+
+
+    #one{
+        /* display: block; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+
+    }
+    
+    #two,
+    #three,
+    .hrow1,
+    .arow1,
+    .aprow1,
+    .apr1col1,
+    .apr1col2,
+    .apr1col3,
+    .apr1col4,
+    .ar1col1,
+    .ar1col2,
+    .photo-detail,
+    .my-image,
+    .game-controls,
+    .gccol1,
+    .gccol2 {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .photo-detail>p>a {
+        float: left;
+    }
+
+    .social {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        padding: 20px;
+        margin: 10px;
+    }
+}
