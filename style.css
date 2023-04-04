@@ -76,7 +76,7 @@ section {
     justify-content: center;
 }
 
-#title-logo{
+#title-logo {
     border-radius: 1px;
 }
 
@@ -655,6 +655,10 @@ header>.blur:nth-child(1) {
         margin: 5px;
     }
 
+    .my-image{
+        padding: 1.5px;
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -714,7 +718,7 @@ header>.blur:nth-child(1) {
     }
 
 
-    #one{
+    #one {
         /* display: block; */
         display: flex;
         align-items: center;
@@ -725,7 +729,7 @@ header>.blur:nth-child(1) {
         padding: 10px;
 
     }
-    
+
     #two,
     #three,
     .hrow1,
@@ -758,5 +762,9 @@ header>.blur:nth-child(1) {
         font-size: 15px;
         padding: 20px;
         margin: 10px;
+    }
+
+    .my-image {
+        padding: 1px;
     }
 }
