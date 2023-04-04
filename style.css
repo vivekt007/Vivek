@@ -764,7 +764,11 @@ header>.blur:nth-child(1) {
         margin: 10px;
     }
 
+    .my-image{
+        padding: 0px;
+    }
+
     .my-img {
-        padding: 1px;
+        padding: 0px;
     }
 }
