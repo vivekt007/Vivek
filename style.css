@@ -664,9 +664,6 @@ header>.blur:nth-child(1) {
     .arow1,
     .aprow1,
     .apr1col1,
-    .apr1col2,
-    .apr1col3,
-    .apr1col4,
     .ar1col1,
     .ar1col2 {
         display: block;
@@ -679,6 +676,11 @@ header>.blur:nth-child(1) {
         padding: 1.5px;
     }
 
+    .apr1col2,
+    .apr1col3,
+    .apr1col4 {
+        display: none;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -756,9 +758,6 @@ header>.blur:nth-child(1) {
     .arow1,
     .aprow1,
     .apr1col1,
-    .apr1col2,
-    .apr1col3,
-    .apr1col4,
     .ar1col1,
     .ar1col2,
     .photo-detail,
