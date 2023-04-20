@@ -790,4 +790,10 @@ header>.blur:nth-child(1) {
     .my-img {
         padding: 0px;
     }
+
+    .apr1col2,
+    .apr1col3,
+    .apr1col4 {
+        display: none;
+    }
 }
