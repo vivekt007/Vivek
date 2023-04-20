@@ -167,17 +167,6 @@ section {
         blue 1px 0;
 }
 
-@keyframes shuffele {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(-500px);
-    }
-}
-
-
 /* footer */
 
 .socials {
@@ -288,6 +277,10 @@ footer>section {
 
 .social:nth-child(5) {
     transition-delay: 1700ms;
+}
+
+.about {
+    height: fit-content;
 }
 
 .arow1 {
@@ -447,9 +440,8 @@ header>.blur:nth-child(1) {
 
 .project-cards {
     height: 400px;
-    width: 25%;
-    /* transition: 700ms; */
-    /* transition-delay: 0ms; */
+    width: 25% auto;
+    /* change width after adding projects */
 }
 
 .project-cards img {
@@ -500,9 +492,17 @@ header>.blur:nth-child(1) {
     height: fit-content;
 }
 
-.gccol1,
+.gccol1 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    height: 100%;
+}
+
 .gccol2 {
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -549,6 +549,26 @@ header>.blur:nth-child(1) {
 
 .animate {
     animation: jump 500ms;
+}
+
+/* testing css */
+
+.apr1col2,
+.apr1col3,
+.apr1col4 {
+    display: none;
+}
+
+/* animation keyframes */
+
+@keyframes shuffele {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-500px);
+    }
 }
 
 @keyframes jump {
@@ -655,7 +675,7 @@ header>.blur:nth-child(1) {
         margin: 5px;
     }
 
-    .my-image{
+    .my-image {
         padding: 1.5px;
     }
 
@@ -764,7 +784,7 @@ header>.blur:nth-child(1) {
         margin: 10px;
     }
 
-    .my-image{
+    .my-image {
         padding: 0px;
     }
 
