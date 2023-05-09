@@ -336,6 +336,19 @@ footer>section {
     width: fit-content;
 }
 
+/* .skill-col{
+} */
+
+.skill-col ul{
+    list-style-type: decimal;
+}
+
+.skill-col li::marker{
+    /* content: '👉'; */
+    /* font-size: 2em; */
+    /* font-weight: 200; */
+}
+
 .ar1col1 h2 {
     font-size: 45px;
 }
