@@ -101,11 +101,12 @@ section {
 
 .pad-detail p {
     font-size: 50px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: cursive;
     background-image: linear-gradient(360deg, white, rgb(119, 0, 255));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: 0 0 20px #fff;
 }
 
 .sclist {
@@ -336,11 +337,15 @@ footer>section {
     width: fit-content;
 }
 
-.skill-col>p>img{
+.skill-col>p>img {
     width: 20px;
 }
 
-.skill-col ul{
+.future p{
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff;
+}
+
+.skill-col ul {
     list-style-type: decimal;
 }
 
