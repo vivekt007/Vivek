@@ -336,17 +336,13 @@ footer>section {
     width: fit-content;
 }
 
-/* .skill-col{
-} */
+.skill-col img{
+    width: 1em;
+    
+}
 
 .skill-col ul{
     list-style-type: decimal;
-}
-
-.skill-col li::marker{
-    /* content: '👉'; */
-    /* font-size: 2em; */
-    /* font-weight: 200; */
 }
 
 .ar1col1 h2 {
