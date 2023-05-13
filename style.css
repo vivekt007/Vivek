@@ -336,7 +336,7 @@ footer>section {
     width: fit-content;
 }
 
-.skill-col img{
+.skill-col>p>img{
     width: 1em;
     
 }
