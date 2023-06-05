@@ -341,10 +341,6 @@ footer>section {
     width: 20px;
 }
 
-.future p{
-    text-shadow: 0 0 5px #fff, 0 0 5px #fff;
-}
-
 .skill-col ul {
     list-style-type: decimal;
 }
@@ -628,6 +624,31 @@ header>.blur:nth-child(1) {
 
     100% {
         left: -80px;
+    }
+}
+
+.rotate-animation {
+    background: linear-gradient(to right, red, yellow, green, blue, violet);
+    background-size: 400% 400%;
+    animation: rotate 10s linear infinite;
+    width: fit-content;
+    background-clip: text;
+    color: transparent;
+}
+
+
+@keyframes rotate {
+    0% {
+        background-position: 0% 50%;
+        text-shadow: 0 0 20px #fff;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
 
