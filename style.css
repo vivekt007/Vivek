@@ -633,6 +633,7 @@ header>.blur:nth-child(1) {
     animation: rotate 10s linear infinite;
     width: fit-content;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
