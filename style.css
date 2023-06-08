@@ -10,11 +10,12 @@
 }
 
 body {
-    background: url(images/dark-logo.jpg);
+    background: url(images/edit1.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     backdrop-filter: blur(8px);
+    /* animation: imagechange infinite 15s ease-in-out; */
 }
 
 header {
@@ -335,6 +336,15 @@ footer>section {
     border-radius: 8px;
     height: 100%;
     width: fit-content;
+    opacity: 0.8;
+}
+
+.skill-col:hover {
+    opacity: 1;
+    /* box-shadow: 1px 1px 3px #fff,
+     -1px -1px 3px #fff, 
+     inset 1px 1px 3px #fff, 
+     inset 1px 1px 3px #fff; */
 }
 
 .skill-col>p>img {
@@ -359,11 +369,15 @@ footer>section {
     float: right;
 }
 
-.myselfrow11>h4>span {
+.myselfrow11>h4>span>a {
     background-image: linear-gradient(to right, green, white);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.myselfrow11>h4>span>a {
+    cursor: url(images/icons8-leaf-30.png) 10 10, grab;
 }
 
 .ar1col2 {
@@ -570,6 +584,43 @@ header>.blur:nth-child(1) {
 
 /* animation keyframes */
 
+@keyframes imagechange {
+    0% {
+        background: url(images/edit1.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    25% {
+        background: url(images/dark-logo.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(images/logo.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(images/dark-logo.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(images/edit1.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+}
+
 @keyframes shuffele {
     0% {
         transform: translateY(0px);
@@ -654,6 +705,30 @@ header>.blur:nth-child(1) {
 }
 
 /* responsive */
+@media screen and (max-width:1400px) {
+
+    .arow1,
+    .abt-columns {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 5px;
+        padding: 20px;
+    }
+
+    .my-image {
+        width: 50%;
+    }
+
+    .ar1col2 {
+        display: block;
+    }
+
+    .photo-detail p {
+        float: left;
+    }
+}
+
 @media screen and (max-width:1000px) {
 
     nav>ul>li>a {
