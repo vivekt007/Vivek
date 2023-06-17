@@ -333,7 +333,7 @@ footer>section {
 .abt-headings>h2>a {
     color: white;
     text-decoration: none;
-    cursor: url(images/earbud.png) 10 10, grab;
+    cursor: url(images/cursor.png) 10 10, grab;
 }
 
 .skill-col {
