@@ -330,6 +330,12 @@ footer>section {
     height: 10%;
 }
 
+.abt-headings>h2>a {
+    color: white;
+    text-decoration: none;
+    cursor: url(images/earbud.png) 10 10, grab;
+}
+
 .skill-col {
     background-color: rgba(128, 128, 128, 0.116);
     padding: 10px;
@@ -376,8 +382,9 @@ footer>section {
     color: transparent;
 }
 
-.myselfrow11>h4>span>a {
-    cursor: url(images/icons8-leaf-30.png) 10 10, grab;
+.myselfrow11>h4>span>a:hover,
+.myselfrow11>h4>span>a:focus {
+    cursor: url(images/leaf.png) 10 10, grab;
 }
 
 .ar1col2 {
@@ -400,6 +407,14 @@ footer>section {
     aspect-ratio: 1/1;
 }
 
+#friend,
+#friend a:hover,
+#friend,
+#friend a:focus {
+    text-decoration: none;
+    cursor: url(images/sunflower.png) 10 10, grab;
+}
+
 header>.blur:nth-child(1) {
     transition-delay: 1000ms;
 }
@@ -415,6 +430,11 @@ header>.blur:nth-child(1) {
 .res-btn:hover {
     background-image: linear-gradient(to left, rgb(25, 0, 255), rgb(0, 25, 80));
     color: black;
+    cursor: url(images/resume.png) 10 10, grab;
+}
+
+.res-btn a:hover {
+    cursor: url(images/resume.png) 10 10, grab;
 }
 
 .project-cards button:hover {
@@ -730,6 +750,9 @@ header>.blur:nth-child(1) {
 }
 
 @media screen and (max-width:1000px) {
+    * {
+        scroll-padding-top: 5dvh;
+    }
 
     nav>ul>li>a {
         font-size: 15px;
@@ -847,6 +870,7 @@ header>.blur:nth-child(1) {
         width: 100%;
         height: fit-content;
         margin: 10px 0;
+        opacity: 1;
     }
 
 
