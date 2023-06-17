@@ -723,6 +723,54 @@ header>.blur:nth-child(1) {
         background-position: 0% 50%;
     }
 }
+/* 
+.responsiveNav{
+    display: none;
+}
+
+.responsiveNav span {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+}
+
+.smallNav {
+    height: 100dvh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.smallNav-content {
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+}
+
+.smallNav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #999999;
+    display: block;
+    transition: 0.2s;
+    font-size: 30px;
+}
+
+.smallNav,
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 60px;
+} */
 
 /* responsive */
 @media screen and (max-width:1400px) {
@@ -817,11 +865,23 @@ header>.blur:nth-child(1) {
 }
 
 @media screen and (max-width:700px) {
+    /* .responsiveNav{
+        display: block;
+    }
+
+    .responsiveNav>span {
+        display: block;
+        right: 10px;
+        top: 20px;
+        font-size: 20px;
+    }
+
+    #navbar {
+        display: none;
+    } */
+
     section {
         padding: 20px;
-        /* margin-top: 50px; */
-        /* height: fit-content; */
-        /* width: 100%; */
     }
 
     .sclist h2 {
@@ -855,7 +915,6 @@ header>.blur:nth-child(1) {
         display: block;
         height: fit-content;
         width: 100%;
-        /* padding: auto; */
     }
 
     .hidden {
@@ -875,7 +934,6 @@ header>.blur:nth-child(1) {
 
 
     #one {
-        /* display: block; */
         display: flex;
         align-items: center;
         justify-content: center;

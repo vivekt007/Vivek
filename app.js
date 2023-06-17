@@ -1,3 +1,12 @@
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.height = "100vh";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.height = "100vh";
+}
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -53,12 +62,3 @@ function jumpStart() {
     }
 }
 
-function openNav() {
-    document.getElementById("myNavBar").style.width = "100%";
-    // setTimeout(function () {
-    //     document.getElementById("myNav").style.width = "0%";
-    // }, 600);
-}
-function closeNav() {
-    document.getElementById("myNavBar").style.width = "0%";
-}
