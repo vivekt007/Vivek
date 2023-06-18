@@ -220,13 +220,103 @@ section {
     transform: rotate(135deg);
 }
 
+.end-line {
+    border-bottom: 1px solid white;
+    width: 70%;
+    margin: 0 15%;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+}
 
 footer>section {
-    height: 30vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contactContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
+
+.contactcol1,
+.contactcol2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    width: 50%;
+    gap: 20px;
+}
+
+.contactContainer h3 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.contactContainer form {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+    width: 100%;
+}
+
+.contactcol1>input[type=text],
+.contactcol1>input[type=email] {
+    background-color: transparent;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.contactcol2>textarea {
+    background-color: transparent;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.contactcol2 button {
+    background-color: transparent;
+    padding: 5px 10px;
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contactcol1:nth-child(1) {
+    transition-delay: 300ms;
+}
+
+.contactcol1:nth-child(2) {
+    transition-delay: 500ms;
+}
+
+.contactcol2:nth-child(1) {
+    transition-delay: 500ms;
+}
+
+.contactcol2:nth-child(2) {
+    transition-delay: 800ms;
+}
+
 
 .blur {
     opacity: 0;
@@ -262,23 +352,23 @@ footer>section {
 }
 
 .social:nth-child(1) {
-    transition-delay: 500ms;
-}
-
-.social:nth-child(2) {
     transition-delay: 800ms;
 }
 
-.social:nth-child(3) {
+.social:nth-child(2) {
     transition-delay: 1100ms;
 }
 
-.social:nth-child(4) {
+.social:nth-child(3) {
     transition-delay: 1400ms;
 }
 
-.social:nth-child(5) {
+.social:nth-child(4) {
     transition-delay: 1700ms;
+}
+
+.social:nth-child(5) {
+    transition-delay: 2000ms;
 }
 
 .about {
@@ -723,6 +813,7 @@ header>.blur:nth-child(1) {
         background-position: 0% 50%;
     }
 }
+
 /* 
 .responsiveNav{
     display: none;
@@ -862,6 +953,38 @@ header>.blur:nth-child(1) {
     .apr1col4 {
         display: none;
     }
+
+    .foot-hidden,
+    .contactContainer,
+    .contactcol1,
+    .contactcol2,
+    .contactContainer>form {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactContainer>form>.contactcol1>input[type=text],
+    .contactContainer>form>.contactcol1>input[type=email],
+    .contactContainer>form>.contactcol2>textarea {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactContainer>form>.contactcol1>input[type=email],
+    .contactContainer>form>.contactcol2>button {
+        margin: 20px 0 0 0;
+    }
+
+    .contactContainer h3{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -956,11 +1079,36 @@ header>.blur:nth-child(1) {
     .my-image,
     .game-controls,
     .gccol1,
-    .gccol2 {
+    .gccol2,
+    .foot-hidden,
+    .contactContainer,
+    .contactcol1,
+    .contactcol2,
+    .contactContainer>form {
         display: block;
         height: fit-content;
         width: 100%;
         padding: 10px;
+    }
+
+    .contactContainer>form>.contactcol1>input[type=text],
+    .contactContainer>form>.contactcol1>input[type=email],
+    .contactContainer>form>.contactcol2>textarea {
+        display: block;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactContainer>form>.contactcol1>input[type=email],
+    .contactContainer>form>.contactcol2>button {
+        margin: 20px 0 0 0;
+    }
+
+    .contactContainer h3{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
     }
 
     .photo-detail>p>a {

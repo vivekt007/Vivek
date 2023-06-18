@@ -51,7 +51,7 @@
             <span onclick="openNav()">&#9776;</span>
         </div> -->
     </header>
-    
+
     <main>
         <section class="my-details sec-one hrow1" id="one">
             <div class="hcol1 blur">
@@ -257,8 +257,23 @@
 
     </main>
     <footer class="contact sec-four black" id="four">
-        <section class="foot-hidden">
-            <!-- <h3> &ltContact&gt</h3> -->
+        <section class="foot-hidden hidden">
+            <h3> &ltContact&gt</h3>
+
+            <div class="contactContainer hidden">
+                <h3>GET IN TOUCH</h3>
+                <form onsubmit="sendEmail(); reset(); return false;" class="hidden">
+                    <div class="contactcol1 hidden">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Email id" required>
+                    </div>
+                    <div class="contactcol2 hidden">
+                        <textarea id="message" placeholder="How can I help you?" required></textarea>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+
             <div class="socials logos">
                 <div class="social hidden">
                     <a href="https://www.instagram.com/vivek.t7/" class="fa fa-instagram" target="_blank"></a>
@@ -277,9 +292,13 @@
                         class="fa fa-envelope" target="_blank"></a>
                 </div>
             </div>
-            <!-- <h3> &lt/Contact&gt</h3> -->
+            <h3> &lt/Contact&gt</h3>
         </section>
+        <div class="end-line hidden"></div>
+        <p class="hidden">©Vivek Tigadi 2023. ALL RIGHTS RESERVED.All work in this website is self created unless
+            credited.</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
