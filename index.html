@@ -28,7 +28,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="loadFunction()">
+    
+    <div class="loader" id="loader">
+        <div class="spinner">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+            <div class="r5"></div>
+            <div class="r6"></div>
+            <div class="r7"></div>
+        </div>
+    </div>
+
     <header class="fixed center">
         <nav id="navbar" class="blur">
             <ul class="center">
@@ -268,7 +281,7 @@
                         <input type="email" id="email" placeholder="Email id" required>
                     </div>
                     <div class="contactcol2 hidden">
-                        <textarea id="message" placeholder="How can I help you?" required></textarea>
+                        <textarea id="message" placeholder="Please leave your message." required></textarea>
                         <button type="submit">Send</button>
                     </div>
                 </form>
@@ -295,7 +308,8 @@
             <h3> &lt/Contact&gt</h3>
         </section>
         <div class="end-line hidden"></div>
-        <p class="hidden">©Vivek Tigadi 2023. ALL RIGHTS RESERVED.All work in this website is self created unless
+        <p class="end-para hidden">©Vivek Tigadi 2023. ALL RIGHTS RESERVED.All work in this website is self created
+            unless
             credited.</p>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>

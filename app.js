@@ -64,22 +64,34 @@ function jumpStart() {
 
 
 let email = document.getElementById('email').value;
-        let subject = document.getElementById('subject').value;
-        let message = document.getElementById('message').value;
-        let name = document.getElementById('name').value;
+let subject = document.getElementById('subject').value;
+let message = document.getElementById('message').value;
+let name = document.getElementById('name').value;
 
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "vivektigadi59@gmail.com",
-                Password: "51EE15E70CF8AECFC96321EB2061802EE435",
-                To: 'vivektigadi59@gmail.com',
-                From: "vivektigadi59@gmail.com",
-                Subject: "New Contact Form Enquiry",
-                Body: "Name: " + document.getElementById("name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Message: " + document.getElementById("message").value
-            }).then(
-                message => alert("Message Sent Succesfully")
-            );
-        }
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "vivektigadi59@gmail.com",
+        Password: "51EE15E70CF8AECFC96321EB2061802EE435",
+        To: 'vivektigadi59@gmail.com',
+        From: "vivektigadi59@gmail.com",
+        Subject: "New Contact Form Enquiry",
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Message: " + document.getElementById("message").value
+    }).then(
+        message => alert("Message Sent Succesfully")
+    );
+}
+
+var myloader;
+
+function loadFunction() {
+    myloader = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+    document.getElementsByTagNameNS("main").style.display = "block";
+}
