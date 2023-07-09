@@ -73,7 +73,7 @@ function sendEmail() {
         Host: "smtp.elasticemail.com",
         Username: "vivektigadi59@gmail.com",
         Password: "51EE15E70CF8AECFC96321EB2061802EE435",
-        To: 'vivektigadi59@gmail.com',
+        To: 'vivektigadi57@gmail.com',
         From: "vivektigadi59@gmail.com",
         Subject: "New Contact Form Enquiry",
         Body: "Name: " + document.getElementById("name").value

@@ -708,6 +708,7 @@ header>.blur:nth-child(1) {
     align-items: center;
     z-index: 999;
     background-color: #000000;
+    overflow: hidden;
 }
 
 .spinner {
