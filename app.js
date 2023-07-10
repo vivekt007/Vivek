@@ -13,9 +13,6 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
-        // else {
-        //     entry.target.classList.remove('show');
-        // }
     });
 });
 
@@ -49,7 +46,6 @@ var checkDead = setInterval(
 
         if (blockLeft < 50 && blockLeft > 0 && characterTop >= 130) {
             block.classList.remove("block-run");
-            // block.style.animation = "none";s
             start.style.display = "block";
         }
     }
