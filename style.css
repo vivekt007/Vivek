@@ -443,15 +443,15 @@ footer>section {
     float: right;
 }
 
-.myselfrow11>h4>span>a {
+.myselfrow11>h6>span>a {
     background-image: linear-gradient(to right, green, white);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.myselfrow11>h4>span>a:hover,
-.myselfrow11>h4>span>a:focus {
+.myselfrow11>h6>span>a:hover,
+.myselfrow11>h6>span>a:focus {
     cursor: url(images/leaf.png) 10 10, grab;
 }
 
