@@ -255,11 +255,11 @@ footer>section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: fit-content;
     padding: 20px;
     width: 50%;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .contactcol2 {
@@ -287,29 +287,36 @@ footer>section {
 
 .contactcol1>input[type=text],
 .contactcol1>input[type=email] {
-    background-color: transparent;
+    background-color: rgba(128, 128, 128, 0.116);
     height: fit-content;
     padding: 10px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 80%;
 }
 
 .contactcol1>textarea {
-    background-color: transparent;
+    background-color: rgba(128, 128, 128, 0.116);
     height: fit-content;
     padding: 10px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 80%;
 }
 
 .contactcol1 button {
-    background-color: transparent;
-    padding: 5px 10px;
+    background-color: white;
+    padding: 5px 15px;
     width: fit-content;
     border: 1px solid white;
-    border-radius: 10px;
+    color: black;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.contactcol1 button:hover{
+    background-color: transparent;
+    color: white;
 }
 
 .blur {
@@ -599,17 +606,20 @@ header>.blur:nth-child(1) {
     aspect-ratio: 16/9;
 }
 
-.apr1col1,.apr1col2,.apr1col3{
+.apr1col1,
+.apr1col2,
+.apr1col3 {
     width: 30%;
 }
 
-.apr1col4{
+.apr1col4 {
     width: 10%;
 }
-/* .project-cards img:hover {
+
+.project-cards img:hover {
     transform: scale(1.2);
     transition: ease-in-out 0.8s;
-} */
+}
 
 .project-img {
     overflow: hidden;
@@ -1089,11 +1099,6 @@ header>.blur:nth-child(1) {
         padding: 10px;
     }
 
-    .contactContainer>form>.contactcol1>input[type=email],
-    .contactContainer>form>.contactcol1>button {
-        margin: 20px 0 0 0;
-    }
-
     .contactContainer h3 {
         text-align: center;
         font-size: 30px;
@@ -1223,12 +1228,6 @@ header>.blur:nth-child(1) {
         height: fit-content;
         width: 100%;
         padding: 10px;
-    }
-
-    .contactContainer>form>.contactcol1>textarea,
-    .contactContainer>form>.contactcol1>input[type=email],
-    .contactContainer>form>.contactcol1>button {
-        margin: 20px 0 0 0;
     }
 
     .contactContainer h3 {

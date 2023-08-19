@@ -176,18 +176,21 @@
                             <div class="skill-col1 skill-col">
                                 <h3>Competent.</h3>
                                 <p><img src="images/graphic-designer.png" alt=""> Designing</p>
-                                <p><img src="images/html-5.png" alt=""> HTML</p>
-                                <p><img src="images/css-3.png" alt=""> CSS</p>
+                                <p><img src="images/front-end.png" alt=""> Front-end</p>
                                 <p><img src="images/js.png" alt=""> Java script</p>
-                                <!-- <p><img src="images/bootstrap.png" alt=""> Bootstrap</p> -->
                                 <p><img src="images/python.png" alt=""> PYTHON</p>
                             </div>
                             <div class="skill-col4 skill-col">
                                 <h3>App Mastery.</h3>
+                                <p><img src="images/figma.png" alt=""> Figma</p>
                                 <p><img src="images/visual-studio-code-icon.png" alt=""> VS Code</p>
                                 <p><img src="images/Photopea_logo.svg.png" alt=""> Photopea</p>
-                                <p><img src="images/figma.png" alt=""> Figma</p>
-                                <p><img src="images/Canva_icon_2021.svg.png" alt=""> Canva</p>
+                            </div>
+                            <div class="skill-col3 skill-col">
+                                <h3>Learning.</h3>
+                                <p><img src="images/ui.png" alt=""> UI/UX</p>
+                                <p><img src="images/wireframe.png" alt=""> Wireframing</p>
+                                <p><img src="images/prototype.png" alt=""> Prototyping</p>
                             </div>
                             <div class="skill-col2 skill-col">
                                 <h3>Other Skills.</h3>
@@ -195,11 +198,6 @@
                                 <p><img src="images/image-editing.png" alt=""> Photo editing</p>
                                 <p><img src="images/editing.png" alt=""> Video editing</p>
                                 <p><img src="images/tools.png" alt=""> Drawing</p>
-                            </div>
-                            <div class="skill-col3 skill-col">
-                                <h3>Learning.</h3>
-                                <p><img src="images/React.png" alt=""> React</p>
-                                <p><img src="images/Nodejs.png" alt=""> Node js</p>
                             </div>
                         </div>
                     </div>
@@ -225,10 +223,10 @@
                         <img class="my-img" src="images/323080389_739462184358001_7546656303979886649_n.jpg"
                             alt="my image">
                     </div>
-                    <div class="photo-detail hidden1">
+                    <!-- <div class="photo-detail hidden1">
                         <h3>Photo By</h3>
                         <p id="friend"><a href="https://www.instagram.com/deto.ur/" target="_blank">My friend.</a></p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <h3> &lt/about&gt </h3>
@@ -288,9 +286,18 @@
                 <h3>GET IN TOUCH</h3>
                 <form onsubmit="sendEmail(); reset(); return false;" class="hidden">
                     <div class="contactcol1 hidden">
+                        <label for="name">Name*</label>
                         <input type="text" id="name" placeholder="Your Name" required>
+                        <hr>
+
+                        <label for="Email">Email Address*</label>
                         <input type="email" id="email" placeholder="Email id" required>
+                        <hr>
+
+                        <label for="message">Message*</label>
                         <textarea id="message" placeholder="Please leave your message." required></textarea>
+                        <hr>
+
                         <button type="submit">Send</button>
                     </div>
                     <div class="contactcol2 hidden">
