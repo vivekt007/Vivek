@@ -43,12 +43,12 @@
     </div>
 
     <header class="fixed center">
-        <nav id="navbar" class="blur">
+        <nav id="navbar" class="blur container-nav">
             <ul class="center">
-                <li><a href="#one">Home</a></li>
-                <li><a href="#two">About</a></li>
-                <li><a href="#three">Projects</a></li>
-                <li><a href="#four">Contact</a></li>
+                <li class="list"><a href="#one">Home</a></li>
+                <li class="list"><a href="#two">About</a></li>
+                <li class="list"><a href="#three">Projects</a></li>
+                <li class="list"><a href="#four">Contact</a></li>
             </ul>
         </nav>
         <!-- <div class="responsiveNav">
@@ -66,30 +66,12 @@
     </header>
 
     <main>
-        <section class="my-details sec-one hrow1" id="one">
+        <section class="my-details sec-one hrow1 section" id="one">
             <div class="hcol1 blur">
-                <h1>Hello,my name is</h1>
+                <h1><span> Hello</span>,my name is</h1>
                 <div class="pad-detail">
                     <p>Vivek Tigadi</p>
                 </div>
-                <!-- <div class="sclist">
-                    <h2 id="full-page"><span>I'm a</span></h2>
-                    <div class="scramble">
-                        <h2>
-                            <span>Student</span>
-                            <span>$Tudent</span>
-                            <span>$Tvdent</span>
-                            <span>S!vpent</span>
-                            <span>Stvup!d</span>
-                            <span>Stud@#!</span>
-                            <span>Stud@#!</span>
-                            <span>&tud@#0</span>
-                            <span>St>d@#!</span>
-                            <span>$tudent</span>
-                        </h2>
-                    </div>
-                </div>
-                <h2 id="small-page">I'm a <span>Student</span></h2> -->
             </div>
             <div class="hcol2 blur">
                 <div id="game" onclick="jump()">
@@ -153,17 +135,18 @@
         </section>
         <div class="hr-line"></div>
 
-        <section class="about sec-two hidden1" id="two">
+        <section class="about sec-two hidden1 section" id="two">
             <h3> &ltabout&gt </h3>
             <div class="arow1 center">
                 <div class="ar1col1 abt-columns">
 
                     <div class="myselfrow11 abt-r1rows hidden1">
                         <div class="abt-headings">
-                            <h2>This is <a href="https://www.instagram.com/vicky__67t/" target="_blank">me</a></h2>
+                            <h2>This is <a href="me.html">me</a></h2>
                         </div>
                         <h3>A Computer Science Engineer,</h3>
-                        <h5>I like <span><a href="documents/viraha.pdf" target="_blank">Plants</a></span> and Flowers.
+                        <h5>I am passionate to be a UI/UX designer. I like <span><a href="documents/viraha.pdf"
+                                    target="_blank">Plants</a></span> and Flowers.
                         </h5>
                     </div>
                     <div class="hr-line-left hidden1"></div>
@@ -234,11 +217,11 @@
 
         <div class="hr-line"></div>
 
-        <section class="projects sec-three hidden2" id="three">
+        <section class="projects sec-three hidden1 section" id="three">
             <h3> &ltprojects&gt </h3>
 
-            <div class="aprow1 hidden2">
-                <div class="apr1col1 project-cards hidden2">
+            <div class="aprow1">
+                <div class="apr1col1 project-cards hidden1">
                     <div class="project-img">
                         <img src="screenshots/Venugram Home.png" alt="Venugram image">
                     </div>
@@ -248,7 +231,7 @@
                     <button class="button"><a href="https://vivekt007.github.io/Venugram/" target="_blank">See
                             project</a></button>
                 </div>
-                <div class="apr1col2 project-cards hidden2">
+                <div class="apr1col2 project-cards hidden1">
                     <div class="project-img">
                         <img src="screenshots/Coffee-hut.png" alt="Coffee hut image">
                     </div>
@@ -259,18 +242,19 @@
                             target="_blank">See
                             project</a></button>
                 </div>
-                <!-- <div class="apr1col3 project-cards hidden2">
+                <div class="apr1col3 project-cards hidden1">
                     <div class="project-img">
-                        <img src="screenshots/eee.png" alt="project image">
+                        <img src="screenshots/TRS.jpg" alt="Tourism recommendation system image">
                     </div>
-                    <h5>project title</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem.</p>
-                    <button class="button"><a href="#" target="_blank">See
-                            project</a></button>
+                    <h5>TRS (University)</h5>
+                    <p>Tourism Recommendation System utilizes machine learning algorithms to provide personalized travel
+                        recommendations.</p>
+                    <button class="button"><a href="https://github.com/vivekt007/Tourismrecommendationsystem"
+                            target="_blank">Project code</a></button>
                 </div>
-                <div class="apr1col4 see-more-btn hidden2">
-                    <button class="more-btn">SEE MORE PROJECTS</button>
-                </div> -->
+                <div class="apr1col4 see-more-btn hidden1">
+                    <button class="more-btn"><a href="projects.html">SEE MORE PROJECTS</a></button>
+                </div>
             </div>
 
             <h3> &lt/projects&gt </h3>
@@ -278,13 +262,14 @@
         <div class="hr-line"></div>
 
     </main>
-    <footer class="contact sec-four black" id="four">
+    <footer class="contact sec-four black section" id="four">
         <section class="foot-hidden hidden">
             <h3> &ltContact&gt</h3>
 
             <div class="contactContainer hidden">
-                <h3>GET IN TOUCH</h3>
                 <form onsubmit="sendEmail(); reset(); return false;" class="hidden">
+                    <h1>Send me a <span>message</span></h1>
+                    <p>Use the form to send me a message and I'll get back to you soon.</p>
                     <div class="contactcol1 hidden">
                         <label for="name">Name*</label>
                         <input type="text" id="name" placeholder="Your Name" required>
@@ -299,9 +284,6 @@
                         <hr>
 
                         <button type="submit">Send</button>
-                    </div>
-                    <div class="contactcol2 hidden">
-                        <img src="images/sasuke.png" alt="sasuke">
                     </div>
                 </form>
             </div>

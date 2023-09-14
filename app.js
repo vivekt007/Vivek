@@ -91,3 +91,55 @@ function showPage() {
     document.getElementById("myDiv").style.display = "block";
     document.getElementsByTagNameNS("main").style.display = "block";
 }
+
+function projecthrefFunction(){
+    document.location.href = '../projects.html';
+}
+
+// nav highlight
+
+// const sections = document.querySelectorAll("one");
+
+// window.addEventListener("scroll", navHighlighter);
+
+// function navHighlighter() {
+
+//     let scrollY = window.pageYOffset;
+
+//     sections.forEach(current => {
+//         const sectionHeight = current.offsetHeight;
+//         const sectionTop = current.offsetTop - 50;
+//         sections = current.getAttribute("id");
+
+//         if (
+//             scrollY > sectionTop &&
+//             scrollY <= sectionTop + sectionHeight
+//         ) {
+//             document.querySelector(".navigation a[href*=" + sections + "]").classList.add("active-nav");
+//         } else {
+//             document.querySelector(".navigation a[href*=" + sections + "]").classList.remove("active-nav");
+//         }
+//     });
+// }
+
+// const sections = document.querySelectorAll('.section');
+// const navLinks = document.querySelectorAll('nav a');
+
+// function setActiveSection() {
+//   const scrollPosition = window.scrollY;
+
+//   sections.forEach((section, index) => {
+//     const sectionTop = section.offsetTop;
+//     const sectionHeight = section.clientHeight;
+
+//     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+//       section.classList.add('active-nav');
+//       navLinks[index].classList.add('active-nav');
+//     } else {
+//       section.classList.remove('active-nav');
+//       navLinks[index].classList.remove('active-nav');
+//     }
+//   });
+// }
+
+// window.addEventListener('scroll', setActiveSection);
