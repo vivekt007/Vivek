@@ -1435,8 +1435,7 @@ video {
     .arow1col2row2col1row2skill-card,
     .arow1col2row2col2,
     .arow1col2row2col2row1skill-card,
-    .arow1col2row2col2row2skill-card,
-    .arow1col3row2 {
+    .arow1col2row2col2row2skill-card {
         display: block;
         width: 100%;
         height: fit-content;
@@ -1449,11 +1448,20 @@ video {
         height: 40dvh;
         gap: 2rem;
     }
-    .arow1col1row2{
+
+    .arow1col1row2 {
         display: block;
         width: 100%;
         height: fit-content;
         font-size: 1rem;
         margin: 0;
+    }
+
+    .arow1col3row2 {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        background-color: #fff;
+        background-image: none;
     }
 }
