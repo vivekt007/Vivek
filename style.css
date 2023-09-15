@@ -52,7 +52,7 @@ nav ul a:hover {
 
 section {
     height: 100vh;
-    padding: 50px 200px;
+    padding: 40px 150px;
     z-index: -1;
 }
 
@@ -339,7 +339,11 @@ form p {
 }
 
 .about {
-    height: fit-content;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .arow1 {
@@ -758,6 +762,233 @@ header>.blur:nth-child(1) {
     animation-delay: -.4s;
 }
 
+
+/* new about */
+
+.center-align {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arow1 {
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.arow1col1 {
+    width: 20%;
+    margin: 0.5rem;
+    border-radius: 12px;
+}
+
+.arow1col2 {
+    width: 60%;
+    margin: 0 0.5rem;
+    border-radius: 12px;
+}
+
+.arow1col3 {
+    width: 20%;
+    margin: 0.5rem;
+    border-radius: 12px;
+}
+
+.arow1col1row1 {
+    height: 24rem;
+    margin: 0.4rem;
+    border-radius: 12px;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.video-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.back-video {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.info {
+    z-index: 9;
+    position: relative;
+    /* color: #000000; */
+    backdrop-filter: blur(4px);
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.info>h2>a {
+    color: #fff;
+}
+
+.info>h5>span>a {
+    background-image: linear-gradient(to right, green, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.arow1col1row2 {
+    background-color: #23221f;
+    color: #fff;
+    height: 12rem;
+    margin: 0.8rem 0.4rem;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.arow1col1row2 p {
+    font-size: 2.5rem;
+}
+
+.arow1col2row1 {
+    background-image: linear-gradient(90deg, rgb(255, 240, 100), rgb(249, 215, 98), rgb(197, 170, 77), rgb(197, 170, 77));
+    color: #000000;
+    height: 5rem;
+    margin: 0.4rem;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.arow1col2row2 {
+    width: 100%;
+    display: flex;
+}
+
+.arow1col2row2col1 {
+    width: 50%;
+}
+
+.arow1col2row2col2 {
+    width: 50%;
+}
+
+.arow1col2row2col1row1skill-card {
+    background-image: linear-gradient(-90deg, rgb(109, 109, 115), rgb(109, 109, 115), rgb(37, 37, 39), rgb(0, 0, 0));
+    color: #fff;
+    height: 18rem;
+    margin: 0.8rem 0.4rem;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.arow1col2row2col1row2skill-card {
+    background-color: #FFB000;
+    color: #fff;
+    height: 12rem;
+    margin: 0.8rem 0.4rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.arow1col2row2col1row2skill-card h3,
+.arow1col2row2col1row2skill-card p,
+.arow1col2row2col2row1skill-card p {
+    color: #000000;
+}
+
+.arow1col2row2col2row1skill-card {
+    background-image: linear-gradient(90deg, rgb(218, 250, 255), rgb(205, 239, 239), rgb(139, 162, 162));
+    color: #000000;
+    height: 12rem;
+    margin: 0.8rem 0.4rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.arow1col2row2col2row2skill-card {
+    background-color: #131313;
+    color: #fff;
+    height: 18rem;
+    margin: 0.8rem 0.4rem;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.arow1col2row2col1row1skill-card>p>img,
+.arow1col2row2col1row2skill-card>p>img,
+.arow1col2row2col2row1skill-card>p>img,
+.arow1col2row2col2row2skill-card>p>img {
+    width: 20px;
+}
+
+.arow1col2row2col1row1skill-card h3,
+.arow1col2row2col1row2skill-card h3,
+.arow1col2row2col2row1skill-card h3,
+.arow1col2row2col2row2skill-card h3 {
+    text-decoration: underline;
+    font-variant: small-caps;
+    margin-bottom: 1rem;
+}
+
+.arow1col3row1 {
+    height: 25rem;
+    color: #000000;
+    overflow: hidden;
+    background-image: url(images/323080389_739462184358001_7546656303979886649_n.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 600ms;
+    margin: 0rem 0.4rem 0.8rem 0.4rem;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.arow1col3row1:hover {
+    transform: scale(1.3);
+}
+
+.arow1col3row2 {
+    height: 10rem;
+    width: 100%;
+    background-image: url(images/Vivek-Tigadi_page-0001.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arow1col3row2 a {
+    color: #000000;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    transition: 800ms;
+}
+
+.arow1col3row2 a:hover {
+    font-size: 3rem;
+    color: #000000;
+}
+
 @keyframes stretch {
 
     0%,
@@ -931,6 +1162,23 @@ header>.blur:nth-child(1) {
     .photo-detail p {
         float: left;
     }
+
+    .arow1col1,
+    .arow1col2,
+    .arow1col3,
+    .arow1col1row1,
+    .arow1col1row2,
+    .arow1col2,
+    .arow1col2row1,
+    .arow1col2row2,
+    .arow1col2row2col1,
+    .arow1col2row2col2,
+    .arow1col3row2 {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 0.4rem 0.8rem 0.4rem 0rem;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -1025,6 +1273,27 @@ header>.blur:nth-child(1) {
         padding: 10px;
         width: 100%;
         margin: 8px 0 0 0;
+    }
+
+    .arow1col1,
+    .arow1col2,
+    .arow1col3,
+    .arow1col1row1,
+    .arow1col1row2,
+    .arow1col2,
+    .arow1col2row1,
+    .arow1col2row2,
+    .arow1col2row2col1,
+    .arow1col2row2col2,
+    .arow1col3row2 {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 0.4rem 0.8rem 0.4rem 0rem;
+    }
+
+    section {
+        padding: 40px 160px;
     }
 }
 
@@ -1153,5 +1422,38 @@ header>.blur:nth-child(1) {
 
     .apr1col4 {
         width: 100%;
+    }
+
+    .arow1col1,
+    .arow1col2,
+    .arow1col3,
+    .arow1col2,
+    .arow1col2row1,
+    .arow1col2row2,
+    .arow1col2row2col1,
+    .arow1col2row2col1row1skill-card,
+    .arow1col2row2col1row2skill-card,
+    .arow1col2row2col2,
+    .arow1col2row2col2row1skill-card,
+    .arow1col2row2col2row2skill-card,
+    .arow1col3row2 {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        /* margin: 0.4rem 0.4rem 0.4rem 0rem; */
+    }
+
+    .arow1col1row1 {
+        display: block;
+        width: 100%;
+        height: 40dvh;
+        gap: 2rem;
+    }
+    .arow1col1row2{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        font-size: 1rem;
+        margin: 0;
     }
 }
