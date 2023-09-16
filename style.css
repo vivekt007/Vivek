@@ -832,6 +832,8 @@ video {
     height: 100%;
     width: 100%;
     padding: 1rem;
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
 .info>h2>a {
@@ -843,6 +845,7 @@ video {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: none;
 }
 
 .arow1col1row2 {
@@ -859,7 +862,7 @@ video {
 }
 
 .arow1col2row1 {
-    background-image: linear-gradient(90deg, rgb(255, 240, 100), rgb(249, 215, 98), rgb(197, 170, 77), rgb(197, 170, 77));
+    background-image: linear-gradient(90deg, rgb(255, 240, 100), rgb(249, 215, 98), rgb(197, 170, 77), rgba(197, 171, 77, 0));
     color: #000000;
     height: 5rem;
     margin: 0.4rem;
@@ -892,7 +895,7 @@ video {
 }
 
 .arow1col2row2col1row2skill-card {
-    background-color: #FFB000;
+    background-color: #131313;
     color: #fff;
     height: 12rem;
     margin: 0.8rem 0.4rem;
@@ -902,7 +905,10 @@ video {
 }
 
 .arow1col2row2col1row2skill-card h3,
-.arow1col2row2col1row2skill-card p,
+.arow1col2row2col1row2skill-card p {
+    color: #fff;
+}
+
 .arow1col2row2col2row1skill-card p {
     color: #000000;
 }
@@ -918,13 +924,28 @@ video {
 }
 
 .arow1col2row2col2row2skill-card {
-    background-color: #131313;
     color: #fff;
     height: 18rem;
     margin: 0.8rem 0.4rem;
     border-radius: 12px;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-size: 1.3rem;
+}
+
+.otherskillinfo {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    background-image: linear-gradient(90deg,rgb(16, 55, 109), rgb(11, 36, 71),rgba(8, 29, 57, 0.500),rgba(8, 29, 57, 0))
+}
+
+.otherskillinfo>p>img {
+    width: 20px;
+}
+
+.otherskillinfo>p,.otherskillinfo h3{
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .arow1col2row2col1row1skill-card>p>img,
