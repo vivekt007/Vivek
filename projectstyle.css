@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: url(images/);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
